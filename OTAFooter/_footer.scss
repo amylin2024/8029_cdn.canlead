@@ -1,0 +1,222 @@
+// footer
+.footer {
+  font-size: $ota-fz-s;
+  .row {
+    + .row {
+      border-top: 1px solid $ota-color-gray_2;
+    }
+  }
+  a {
+    transition: opacity 0.3s;
+    &:hover,
+    &:active {
+      opacity: 0.7;
+    }
+  }
+  .btn_line {
+    font-size: $ota-fz-s;
+  }
+}
+.footer-bottom__logo-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.finfo_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 12px 0;
+  @media (max-width: $lg) {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+.flogo_box {
+  padding: clamp(12px, 1vw, 20px) 0 clamp(8px, 1vw, 12px) 0;
+  .flogo_box_item {
+    width: auto;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 8px;
+    @media (max-width: $sm) {
+      width: 132px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      &.flogo_1 {
+        height: 38px;
+        margin-top: 9px;
+      }
+    }
+  }
+  // .flogo_1 {
+  // width: clamp(100px, 8.2vw, 132px);
+  // height: 48px;
+  // }
+
+  // .flogo_2 {
+  // width: clamp(100px, 8.2vw, 132px);
+  // height: 48px;
+  // }
+}
+
+// list
+.list_flogo_box {
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: $xxl) {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media (max-width: $lg) {
+    margin-top: 12px;
+    width: 100%;
+  }
+}
+
+.list_flogo {
+  padding-left: 0;
+  display: flex;
+  @media (max-width: $xxl) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.list_ISO {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px 16px;
+  padding: 16px 28px 16px 0;
+  border-right: 1px solid $ota-color-gray_2;
+  flex-wrap: wrap;
+  @media (max-width: $lg) {
+    border-right: 0;
+    padding: 4px 0 8px 0;
+    justify-content: center;
+  }
+  .list_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &:last-child {
+      // text-align: right;
+      display: flex;
+      align-items: flex-end;
+      @media (max-width: $lg) {
+        align-items: center;
+      }
+      p {
+        text-align: right;
+        @media (max-width: $lg) {
+          text-align: center;
+        }
+      }
+    }
+    p {
+      font-size: 12px;
+    }
+  }
+}
+
+.list_finfo {
+  padding-left: 0;
+  list-style: none;
+  // padding: 0 36px 0 20px;
+  margin-bottom: 0;
+  @media (max-width: $lg) {
+    // margin-bottom: 12px;
+    padding: 0 16px;
+    text-align: center;
+  }
+  @media (max-width: $xs) {
+    width: 100%;
+    text-align: center;
+  }
+  .list_item {
+    + .list_item {
+      margin-top: 4px;
+    }
+  }
+  .btn_line {
+    color: $ota-color-main;
+    // font-size: 13px;
+    padding: 4px 12px;
+    line-height: 1.2;
+    border-color: $ota-color-gray_4;
+    color: $ota-color-gray_4;
+    &:hover,
+    &:active {
+      border-color: $ota-color-main;
+    }
+  }
+}
+
+.list_fSMO {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 0;
+  @media (max-width: $lg) {
+    justify-content: center;
+  }
+  .list_item,
+  svg {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+// 回頂端
+#goTop {
+  width: clamp(42px, 4vw, 56px);
+  height: clamp(42px, 4vw, 56px);
+  border-radius: 999px;
+  background-color: $ota-color-main_light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: clamp(20px, 3vw, 40px);
+  bottom: clamp(20px, 3vw, 40px);
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+  &.isShow {
+    opacity: 1;
+    pointer-events: all;
+  }
+  &:hover,
+  &:active {
+    background-color: $ota-color-sec_light;
+  }
+  &::after {
+    @extend %FontAwesomeIcon;
+    content: "\f062";
+    padding-left: 0;
+    font-size: clamp(24px, 2vw, 32px);
+    color: #fff;
+  }
+}

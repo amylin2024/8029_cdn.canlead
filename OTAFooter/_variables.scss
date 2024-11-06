@@ -1,0 +1,111 @@
+// 原生變數
+// :root {
+//   --ota-color-main: #31b0b7;
+//   --ota-color-main_light: #3ddde6;
+//   --ota-color-main_opacity12: rgba(49, 176, 183, 12%);
+//   --ota-color-sec_opacity12: rgba(240, 200, 8, 12%);
+//   --ota-color-sec: #f0c808;
+//   --ota-color-sec_light: #ffdf3d;
+//   --ota-color-alert: #ee130f;
+//   --ota-color-alert_light: #ff7575;
+
+//   --ota-color-1: #5f9efd;
+//   --ota-color-2: #53e2bf;
+//   --ota-color-3: #ff8d8a;
+//   --ota-color-4: #ffd53f;
+//   --ota-color-5: #a986f5;
+//   --ota-color-6: #70d68c;
+//   --ota-color-7: #ce8b28;
+//   --ota-color-8: #f497e5;
+
+//   --ota-color-gray: #f5f5f5;
+//   --ota-color-gray_2: #ccc;
+//   --ota-color-gray_3: #aaa;
+//   --ota-color-gray_4: #777;
+
+//   --ota-color-black: #000000;
+//   --ota-color-white: #ffffff;
+
+//   --ota-color-icon-tit-des-1: #fff;
+//   --ota-color-icon-tit-des-2: #31b0b7;
+//   --ota-color-icon-tit-des-3: #f0c808;
+
+//   --ota-color-smo-fb: #3f51b5;
+//   --ota-color-smo-line: #00c300;
+
+//   --ota-radius-s: 4px;
+//   --ota-radius-m: 8px;
+//   --ota-radius-l: 12px;
+//   --ota-radius-xl: 16px;
+
+//   --ota-fz-s: 14px;
+//   --ota-fz-m: 16px;
+//   --ota-fz-l: 18px;
+//   --ota-fz-xl: clamp(20px, 1.25vw, 24px);
+//   --ota-fz-xxl: clamp(24px, 2vw, 36px);
+
+//   --ota-linear-gradient-color-main: linear-gradient(
+//     135deg,
+//     rgba(61, 221, 230, 0.2) 0%,
+//     rgba(61, 221, 230, 0.064) 100%
+//   );
+//   --ota-linear-gradient-color-sec: linear-gradient(
+//     135deg,
+//     rgba(240, 200, 8, 0.2) 0%,
+//     rgba(240, 200, 8, 0.064) 100%
+//   );
+// }
+
+// SCSS 變數
+$ota-color-main: var(--ota-color-main);
+$ota-color-main_light: var(--ota-color-main_light);
+$ota-color-main_opacity12: var(--ota-color-main_opacity12);
+$ota-color-sec_opacity12: var(--ota-color-sec_opacity12);
+$ota-color-sec: var(--ota-color-sec);
+$ota-color-sec_light: var(--ota-color-sec_light);
+$ota-color-alert: var(--ota-color-alert);
+$ota-color-alert_light: var(--ota-color-alert_light);
+
+$ota-color-1: var(--ota-color-1);
+$ota-color-2: var(--ota-color-2);
+$ota-color-3: var(--ota-color-3);
+$ota-color-4: var(--ota-color-4);
+$ota-color-5: var(--ota-color-5);
+$ota-color-6: var(--ota-color-6);
+$ota-color-7: var(--ota-color-7);
+$ota-color-8: var(--ota-color-8);
+
+$ota-color-gray: var(--ota-color-gray);
+$ota-color-gray_2: var(--ota-color-gray_2);
+$ota-color-gray_3: var(--ota-color-gray_3);
+$ota-color-gray_4: var(--ota-color-gray_4);
+
+$ota-color-black: var(--ota-color-black);
+$ota-color-white: var(--ota-color-white);
+
+$ota-color-icon-tit-des-1: var(--ota-color-icon-tit-des-1);
+$ota-color-icon-tit-des-2: var(--ota-color-icon-tit-des-2);
+$ota-color-icon-tit-des-3: var(--ota-color-icon-tit-des-3);
+
+$ota-color-smo-fb: var(--ota-color-smo-fb);
+$ota-color-smo-line: var(--ota-color-smo-line);
+
+$ota-radius-s: var(--ota-radius-s);
+$ota-radius-m: var(--ota-radius-m);
+$ota-radius-l: var(--ota-radius-l);
+
+$ota-fz-s: var(--ota-fz-s);
+$ota-fz-m: var(--ota-fz-m);
+$ota-fz-l: var(--ota-fz-l);
+$ota-fz-xl: var(--ota-fz-xl);
+$ota-fz-xxl: var(--ota-fz-xxl);
+
+$ota-linear-gradient-color-main: var(--ota-linear-gradient-color-main);
+$ota-linear-gradient-color-sec: var(--ota-linear-gradient-color-sec);
+
+$xs: 424.98px;
+$sm: 575.98px;
+$md: 767.98px;
+$lg: 991.98px;
+$xl: 1199.98px;
+$xxl: 1399.98px;

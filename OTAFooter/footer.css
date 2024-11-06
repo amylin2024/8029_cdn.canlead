@@ -1,0 +1,226 @@
+#goTop::after {
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  padding-left: 4px;
+  vertical-align: middle;
+  font-weight: 900;
+}
+
+.footer {
+  font-size: var(--ota-fz-s);
+}
+.footer .row + .row {
+  border-top: 1px solid var(--ota-color-gray_2);
+}
+.footer a {
+  transition: opacity 0.3s;
+}
+.footer a:hover, .footer a:active {
+  opacity: 0.7;
+}
+.footer .btn_line {
+  font-size: var(--ota-fz-s);
+}
+
+.footer-bottom__logo-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.finfo_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 12px 0;
+}
+@media (max-width: 991.98px) {
+  .finfo_box {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+.flogo_box {
+  padding: clamp(12px, 1vw, 20px) 0 clamp(8px, 1vw, 12px) 0;
+}
+.flogo_box .flogo_box_item {
+  width: auto;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 8px;
+}
+@media (max-width: 575.98px) {
+  .flogo_box .flogo_box_item {
+    width: 132px;
+  }
+}
+.flogo_box .flogo_box_item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.flogo_box .flogo_box_item img.flogo_1 {
+  height: 38px;
+  margin-top: 9px;
+}
+
+.list_flogo_box {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 1399.98px) {
+  .list_flogo_box {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 991.98px) {
+  .list_flogo_box {
+    margin-top: 12px;
+    width: 100%;
+  }
+}
+
+.list_flogo {
+  padding-left: 0;
+  display: flex;
+}
+@media (max-width: 1399.98px) {
+  .list_flogo {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.list_ISO {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px 16px;
+  padding: 16px 28px 16px 0;
+  border-right: 1px solid var(--ota-color-gray_2);
+  flex-wrap: wrap;
+}
+@media (max-width: 991.98px) {
+  .list_ISO {
+    border-right: 0;
+    padding: 4px 0 8px 0;
+    justify-content: center;
+  }
+}
+.list_ISO .list_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.list_ISO .list_item:last-child {
+  display: flex;
+  align-items: flex-end;
+}
+@media (max-width: 991.98px) {
+  .list_ISO .list_item:last-child {
+    align-items: center;
+  }
+}
+.list_ISO .list_item:last-child p {
+  text-align: right;
+}
+@media (max-width: 991.98px) {
+  .list_ISO .list_item:last-child p {
+    text-align: center;
+  }
+}
+.list_ISO .list_item p {
+  font-size: 12px;
+}
+
+.list_finfo {
+  padding-left: 0;
+  list-style: none;
+  margin-bottom: 0;
+}
+@media (max-width: 991.98px) {
+  .list_finfo {
+    padding: 0 16px;
+    text-align: center;
+  }
+}
+@media (max-width: 424.98px) {
+  .list_finfo {
+    width: 100%;
+    text-align: center;
+  }
+}
+.list_finfo .list_item + .list_item {
+  margin-top: 4px;
+}
+.list_finfo .btn_line {
+  color: var(--ota-color-main);
+  padding: 4px 12px;
+  line-height: 1.2;
+  border-color: var(--ota-color-gray_4);
+  color: var(--ota-color-gray_4);
+}
+.list_finfo .btn_line:hover, .list_finfo .btn_line:active {
+  border-color: var(--ota-color-main);
+}
+
+.list_fSMO {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 0;
+}
+@media (max-width: 991.98px) {
+  .list_fSMO {
+    justify-content: center;
+  }
+}
+.list_fSMO .list_item,
+.list_fSMO svg {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.list_fSMO a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#goTop {
+  width: clamp(42px, 4vw, 56px);
+  height: clamp(42px, 4vw, 56px);
+  border-radius: 999px;
+  background-color: var(--ota-color-main_light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: clamp(20px, 3vw, 40px);
+  bottom: clamp(20px, 3vw, 40px);
+  z-index: 999;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+#goTop.isShow {
+  opacity: 1;
+  pointer-events: all;
+}
+#goTop:hover, #goTop:active {
+  background-color: var(--ota-color-sec_light);
+}
+#goTop::after {
+  content: "\f062";
+  padding-left: 0;
+  font-size: clamp(24px, 2vw, 32px);
+  color: #fff;
+}/*# sourceMappingURL=footer.css.map */
