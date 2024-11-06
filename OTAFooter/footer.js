@@ -60,6 +60,12 @@ footer.innerHTML = `
         <div class="col-12 col-lg-6">
             <ul class="list_ISO mb-0">
                 <li class="list_item">
+                   <img src="./_img/common/footer_cer_icon_1.png">
+                </li>
+                 <li class="list_item">
+                   <img src="./_img/common/footer_cer_icon_2.png">
+                </li>
+                <li class="list_item">
                     <i class="icon_sprites icon_sprites_ISO_27001"></i>
                     <p class="mb-0">ISO 27001 認證</p>
                 </li>
