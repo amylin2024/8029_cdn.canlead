@@ -58,38 +58,31 @@ footer.innerHTML = `
     </div>
     <div class="row finfo_box pt-3">
         <div class="col-12 col-lg-6">
-            <div class="list_ISO mb-0">
-              <div class="d-flex list_ISO_row">
-                <div class="list_item">
+            <ul class="list_ISO mb-0">
+                <li class="list_item">
                   <img style="width: 55px;" src="../_common/_img/footer_cer_icon_1.png">
-                </div>
-                <div class="list_item">
+                </li>
+                <li class="list_item">
                   <img style="width: 55px;" src="../_common/_img/footer_cer_icon_2.png">
-                </div>
-              </div>
-              <div class="d-flex list_ISO_row">
-                <div class="list_item">
+              </li>
+                <li class="list_item">
                     <i class="icon_sprites icon_sprites_ISO_27001"></i>
                     <p class="mb-0">ISO 27001 認證</p>
-                </div>
+                </li>
 
-                <div class="list_item">
+                <li class="list_item">
                     <i class="icon_sprites icon_sprites_ISO_27701"></i>
                     <p class="mb-0">ISO 27701 認證</p>
-                </div>
+                </li>
 
-                <div class="list_item">
+                <li class="list_item">
                     <i class="icon_sprites icon_sprites_ISO_9001"></i>
                     <p class="mb-0">ISO 9001 認證</p>
-                </div>
-              </div>
-
-              <div class="list_item  w-100">
-                  <p class="mb-0 w-100">通過 PCI DSS 支付卡產業資料安全標準認證</p>
-              </div>
-                
-          
-            </div>
+                </li>
+                <li class="list_item  w-100">
+                    <p class="mb-0 w-100">通過 PCI DSS 支付卡產業資料安全標準認證</p>
+                </li>
+            </ul>
         </div>
         <div
             class="col-12 col-lg-6 d-flex justify-content-center justify-content-center justify-content-lg-start flex-lg-row flex-column ">

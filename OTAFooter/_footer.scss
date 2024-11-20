@@ -59,15 +59,6 @@
       }
     }
   }
-  // .flogo_1 {
-  // width: clamp(100px, 8.2vw, 132px);
-  // height: 48px;
-  // }
-
-  // .flogo_2 {
-  // width: clamp(100px, 8.2vw, 132px);
-  // height: 48px;
-  // }
 }
 
 // list
@@ -109,12 +100,14 @@
     padding: 4px 0 8px 0;
     justify-content: center;
   }
+  .list_ISO_row {
+    gap: 8px 16px;
+  }
   .list_item {
     display: flex;
     flex-direction: column;
     align-items: center;
     &:last-child {
-      // text-align: right;
       display: flex;
       align-items: flex-end;
       @media (max-width: $lg) {
@@ -128,7 +121,8 @@
       }
     }
     p {
-      font-size: 12px;
+      font-size: 11px;
+      margin-top: 2px;
     }
   }
 }
@@ -136,10 +130,8 @@
 .list_finfo {
   padding-left: 0;
   list-style: none;
-  // padding: 0 36px 0 20px;
   margin-bottom: 0;
   @media (max-width: $lg) {
-    // margin-bottom: 12px;
     padding: 0 16px;
     text-align: center;
   }
@@ -154,7 +146,6 @@
   }
   .btn_line {
     color: $ota-color-main;
-    // font-size: 13px;
     padding: 4px 12px;
     line-height: 1.2;
     border-color: $ota-color-gray_4;

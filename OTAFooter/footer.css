@@ -114,6 +114,9 @@
     justify-content: center;
   }
 }
+.list_ISO .list_ISO_row {
+  gap: 8px 16px;
+}
 .list_ISO .list_item {
   display: flex;
   flex-direction: column;
@@ -137,7 +140,8 @@
   }
 }
 .list_ISO .list_item p {
-  font-size: 12px;
+  font-size: 11px;
+  margin-top: 2px;
 }
 
 .list_finfo {
@@ -223,4 +227,318 @@
   padding-left: 0;
   font-size: clamp(24px, 2vw, 32px);
   color: #fff;
+}
+
+.icon_sprites {
+  background-image: url("./_img/common/css_sprites.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.icon_sprites_h_logo {
+  background-position: -297px 0px;
+  width: 161px;
+  height: 64px;
+}
+
+.icon_sprites_f_logo_1 {
+  background-position: -136px 0px;
+  width: 161px;
+  height: 64px;
+}
+
+.icon_sprites_f_logo_2 {
+  background-position: 0px 0px;
+  width: 136px;
+  height: 68px;
+}
+
+.icon_sprites_tit_des {
+  background-image: none;
+  position: relative;
+  display: flex;
+}
+.icon_sprites_tit_des::before, .icon_sprites_tit_des::after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 99px;
+}
+@media (max-width: 575.98px) {
+  .icon_sprites_tit_des::before, .icon_sprites_tit_des::after {
+    width: 12px;
+    height: 12px;
+  }
+}
+.icon_sprites_tit_des::before {
+  background-color: var(--ota-color-icon-tit-des-1);
+}
+.icon_sprites_tit_des::after {
+  background-color: var(--ota-color-icon-tit-des-3);
+  margin-left: -5px;
+}
+@media (max-width: 575.98px) {
+  .icon_sprites_tit_des::after {
+    margin-left: -3px;
+  }
+}
+
+.icon_sprites_tit_des1 {
+  background-image: none;
+  position: relative;
+  display: flex;
+}
+.icon_sprites_tit_des1::before, .icon_sprites_tit_des1::after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 99px;
+}
+@media (max-width: 575.98px) {
+  .icon_sprites_tit_des1::before, .icon_sprites_tit_des1::after {
+    width: 12px;
+    height: 12px;
+  }
+}
+.icon_sprites_tit_des1::before {
+  background-color: var(--ota-color-icon-tit-des-2);
+}
+.icon_sprites_tit_des1::after {
+  background-color: var(--ota-color-icon-tit-des-3);
+  margin-left: -5px;
+}
+@media (max-width: 575.98px) {
+  .icon_sprites_tit_des1::after {
+    margin-left: -3px;
+  }
+}
+
+.icon_sprites_point {
+  background-position: -525px 0px;
+  width: 18px;
+  height: 18px;
+}
+
+.icon_sprites_fb {
+  background-position: -582px 0px;
+  width: 37px;
+  height: 37px;
+}
+
+.icon_sprites_line {
+  background-position: -647px 0px;
+  width: 37px;
+  height: 37px;
+}
+
+.icon_sprites_ISO_27001 {
+  background-position: -684px 0px;
+  width: 39px;
+  height: 36px;
+}
+
+.icon_sprites_ISO_27701 {
+  background-position: -486px 0px;
+  width: 39px;
+  height: 36px;
+}
+
+.icon_sprites_ISO_9001 {
+  background-position: -543px 0px;
+  width: 39px;
+  height: 36px;
+}
+
+.footer-bottom__logo {
+  display: block;
+  background-image: url("./_img/common/footer-logo.png");
+  background-size: 210px 400px;
+  margin: 0.25rem 0.75rem;
+}
+@media (max-width: 991.98px) {
+  .footer-bottom__logo {
+    margin: 1px 8px;
+  }
+}
+
+.footer-bottom__logo.logo-ARS {
+  height: 40px;
+  width: 120px;
+  background-position: top 0px left 0px;
+}
+
+.footer-bottom__logo.logo-CanleadTravel {
+  height: 40px;
+  width: 106px;
+  background-position: top -40px left 0px;
+}
+
+.footer-bottom__logo.logo-RoamingBar {
+  height: 40px;
+  width: 63px;
+  background-position: top -80px left 0px;
+}
+
+.footer-bottom__logo.logo-UFirst-2 {
+  height: 40px;
+  width: 54px;
+  background-position: top -120px left 0px;
+}
+
+.footer-bottom__logo.logo-DragonPass {
+  height: 40px;
+  width: 118px;
+  background-position: top -160px left 0px;
+}
+
+.footer-bottom__logo.logo-HeyCar {
+  height: 40px;
+  width: 97px;
+  background-position: top -200px left 0px;
+}
+
+.footer-bottom__logo.logo-FreeLiving {
+  height: 40px;
+  width: 90px;
+  background-position: top -240px left 0px;
+}
+
+.footer-bottom__logo.logo-CallCarBar {
+  height: 40px;
+  width: 61px;
+  background-position: top -280px left 0px;
+}
+
+.footer-bottom__logo.logo-UFirst-1 {
+  height: 40px;
+  width: 55px;
+  background-position: top -320px left 0px;
+}
+
+.footer-bottom__logo.logo-Movie {
+  height: 40px;
+  width: 87px;
+  background-position: top -360px left 0px;
+}
+
+.footer-bottom__logo.logo-VIP {
+  height: 40px;
+  width: 44px;
+  background-position: top 0px left -165px;
+}
+
+.footer-bottom__logo.logo-SmartTicket {
+  height: 40px;
+  width: 45px;
+  background-position: top -40px left -165px;
+}
+
+.footer-bottom__logo.logo-Help {
+  height: 40px;
+  width: 44px;
+  background-position: top -80px left -165px;
+}
+
+.icon_index_sprites {
+  background-image: url("./_img/index/icon_index_sprites.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.icon_index_sprites_core_1 {
+  background-position: -243px 0px;
+  width: 80px;
+  height: 81px;
+}
+
+.icon_index_sprites_core_2 {
+  background-position: 0px 0px;
+  width: 81px;
+  height: 81px;
+}
+
+.icon_index_sprites_core_3 {
+  background-position: -81px 0px;
+  width: 81px;
+  height: 81px;
+}
+
+.icon_index_sprites_core_4 {
+  background-position: -484px 0px;
+  width: 80px;
+  height: 81px;
+}
+
+.icon_index_sprites_core_5 {
+  background-position: -162px 0px;
+  width: 81px;
+  height: 81px;
+}
+
+.icon_index_sprites_core_6 {
+  background-position: -323px 0px;
+  width: 81px;
+  height: 81px;
+}
+
+.icon_index_sprites_core_7 {
+  background-position: -564px 0px;
+  width: 81px;
+  height: 81px;
+}
+
+.icon_index_sprites_core_8 {
+  background-position: -404px 0px;
+  width: 80px;
+  height: 81px;
+}
+
+.icon_index_sprites_need_1 {
+  background-position: -645px 0px;
+  width: 80px;
+  height: 75px;
+}
+
+.icon_index_sprites_need_2 {
+  background-position: -779px 0px;
+  width: 80px;
+  height: 53px;
+}
+
+.icon_index_sprites_need_3 {
+  background-position: -725px 0px;
+  width: 54px;
+  height: 69px;
+}
+
+.icon_index_sprites_need_4 {
+  background-position: -859px 0px;
+  width: 52px;
+  height: 89px;
+}
+
+.icon_index_sprites_need_5 {
+  background-position: -911px 0px;
+  width: 58px;
+  height: 81px;
+}
+
+.icon_index_sprites_need_6 {
+  background-position: -1065px 0px;
+  width: 82px;
+  height: 61px;
+}
+
+.icon_index_sprites_need_7 {
+  background-position: -1017px 0px;
+  width: 48px;
+  height: 73px;
+}
+
+.icon_index_sprites_need_8 {
+  background-position: -969px 0px;
+  width: 48px;
+  height: 71px;
 }/*# sourceMappingURL=footer.css.map */
