@@ -121,6 +121,7 @@ footer.innerHTML = `
         </div>
     </div>
 </div>
+<div id="goTop" class=""></div>
 `;
 
 // 設定 _footerInfo.json Footer 資訊
