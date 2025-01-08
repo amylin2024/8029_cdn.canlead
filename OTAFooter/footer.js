@@ -99,7 +99,7 @@ footer.innerHTML = `
                 </li>
 
                 <li class="list_item">
-                    客服專線：<a href="tel:000@gmail.com">00-0000-0000</a>
+                    客服專線：<a href="tel:000@gmail.com">04-3602-3318</a>
                 </li>
 
                 <li class="list_item">
