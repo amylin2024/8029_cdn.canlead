@@ -109,14 +109,14 @@ footer.innerHTML = `
 
             <ul class="list_fSMO">
                 <li class="list_item">
-                    <a href="#" target="_blank" class="btn-ftShare-fb"><i
+                    <a href="https://www.facebook.com/CanLead.tw" target="_blank" class="btn-ftShare-fb"><i
                             class="fa-brands fa-square-facebook"></i></a>
                 </li>
 
-                <li class="list_item mt-1">
-                    <a href="#" target="_blank" class="btn-ftShare-line"><i
-                            class="fa-brands fa-line"></i></a>
-                </li>
+                // <li class="list_item mt-1">
+                //     <a href="#" target="_blank" class="btn-ftShare-line"><i
+                //             class="fa-brands fa-line"></i></a>
+                // </li>
             </ul>
         </div>
     </div>
